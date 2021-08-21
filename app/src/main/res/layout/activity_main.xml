@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <ImageView
+        android:id="@+id/t_shirt_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:src="@drawable/tshirt"
+        android:scaleType="centerInside"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/heart"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/in_store_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="In Store"
+        android:layout_below="@id/t_shirt_iv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="17.75 dollar"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/t_shirt_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Color : black"
+        android:layout_below="@id/in_store_tv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        />
+
+    <!-- TODO : Add rest of the app views    -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="35dp"
+        android:layout_alignParentBottom="true"
+        android:text="Add to Cart"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>
